@@ -1,35 +1,51 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import { ThemeProvider } from './theme-provider'
+import "./globals.css";
+import { Limelight, Red_Hat_Display, Outfit } from "next/font/google";
+// import { ThemeProvider } from "./theme-provider";
 
-import Head from 'next/head'
+import Head from "next/head";
 
-const inter = Inter({ 
-  weight: ['100', '200', '300', '600', '400', '700', '900'],
-  subsets: ['latin'] 
-})
+const redHatDisplay = Red_Hat_Display({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-red-hat-display",
+});
+
+const limelight = Limelight({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-limelight",
+});
+
+const outfit = Outfit({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
 
 export const metadata = {
-  title: "Home - Comming soon Template",
-  description: 'This is a simple coming soon template built with NextJS and TailwindCSS. It is a lightweight and responsive template that can be used for various projects that require a "coming soon" page.',
-}
+  title: "Modaura",
+  description:
+    'This is a simple coming soon template built with NextJS and TailwindCSS. It is a lightweight and responsive template that can be used for various projects that require a "coming soon" page.',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.ico" />        
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
       </Head>
-      <body className={ `${inter.className} bg-gray-200	min-h-screen dark:bg-[#0d1117] `}
+      <body
+        className={`${limelight.variable} ${outfit.variable} ${outfit.className} min-h-screen`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>          
-          <main className='main'>{children}</main>
-        </ThemeProvider>          
+        <main className="main">{children}</main>
       </body>
     </html>
-  )
+  );
 }
