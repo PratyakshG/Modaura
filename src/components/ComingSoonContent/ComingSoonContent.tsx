@@ -11,10 +11,7 @@ function ComingSoonContent() {
         <h2 className="text-center font-heading text-6xl sm:text-7xl lg:text-8xl leading-[5rem] sm:leading-[7rem] lg:leading-[7rem] font-bold">
           <span className="text-[#c49261]">{title}</span>
         </h2>
-        <h3
-          htmlFor="email"
-          className="block text-slate-800 dark:text-slate-100  font-light text-sm leading-6"
-        >
+        <h3 className="block text-slate-800 dark:text-slate-100  font-light text-sm leading-6">
           {newsletterheading}
         </h3>
       </div>
