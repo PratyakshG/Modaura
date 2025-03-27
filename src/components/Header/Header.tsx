@@ -11,7 +11,7 @@ function Header() {
       <header className="items-center justify-between w-full max-w-5xl text-sm">
         <div className="bottom-0 left-0 flex items-end justify-center w-full h-30 md:h-48 lg:static lg:h-auto lg:w-auto lg:bg-none">
           <div className="flex flex-col text-center">
-            <p className="text-xl font-xl text-slate-800 dark:text-slate-100 font-outfit">
+            <p className="md:text-xl text-slate-800 dark:text-slate-100 font-outfit">
               {sitetagline}
             </p>
           </div>

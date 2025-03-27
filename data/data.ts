@@ -11,16 +11,6 @@ const data = {
   hideSubscribeForm: false, // make true to disable subscription form
   socialIcons: [
     {
-      icon: "/icons8-facebook.svg",
-      title: "Facebook",
-      link: "https://www.facebook.com",
-    },
-    {
-      icon: "/icons8-twitter.svg",
-      title: "Twitter",
-      link: "https://www.twitter.com",
-    },
-    {
       icon: "/icons8-instagram.svg",
       title: "Instagram",
       link: "https://www.instagram.com/_modaura.in",

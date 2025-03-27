@@ -8,18 +8,18 @@ import logo from "../../../public/ModAura_logo_light.svg";
 export default function StandardComingSoon() {
   return (
     <>
-      <div className="flex h-dvh w-screen">
-        <div className="w-full max-h-full flex items-center justify-center">
-          <div className="flex flex-col text-right absolute z-10">
+      <div className="flex flex-col md:flex-row h-dvh w-screen">
+        <div className="w-full h-1/3 md:h-screen flex items-center justify-center">
+          <div className="w-3/4 flex flex-col mx-auto text-center md:text-right z-10">
             <Image
               src={logo}
               alt="logo"
-              height={100}
+              className=""
             />
-            <h1 className="text-xl font-outfit font-light lowercase">Minimal. Elegant. Effortless.</h1>
+            <h1 className="text-sm md:text-xl font-outfit font-light lowercase">Minimal. Elegant. Effortless.</h1>
           </div>
           <div
-            className="w-full h-full blur-[2px]"
+            className="w-full md:w-1/2 h-1/3 md:h-full blur-[2px] absolute -z-10"
             style={{
               backgroundImage: "url('/backgroundCS.png')",
               backgroundSize: "cover",
@@ -27,7 +27,7 @@ export default function StandardComingSoon() {
             }}
           />
         </div>
-        <div className="w-full h-screen flex flex-col items-center justify-center">
+        <div className="w-full h-2/3 md:h-screen flex flex-col items-center justify-center">
           <Header />
           <ComingSoonContent />
           <SubscribeForm />
