@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Limelight, Red_Hat_Display, Outfit } from "next/font/google";
 // import { ThemeProvider } from "./theme-provider";
+import { Analytics } from "@vercel/analytics/next";
 
 import Head from "next/head";
 
@@ -44,7 +45,8 @@ export default function RootLayout({
       <body
         className={`${limelight.variable} ${outfit.variable} ${outfit.className} min-h-screen`}
       >
-        <main className="main">{children}</main>
+        {children}
+        <Analytics />
       </body>
     </html>
   );
