@@ -13,6 +13,12 @@ module.exports = {
         limelight: ["var(--font-limelight)"],
         outfit: ["var(--font-outfit)"],
       },
+      colors: {
+        ivory: "#F8F7F4",
+        deepTeal: "#016D77",
+        roseGold: "#B76E79",
+        beige: "#D9C6A5",
+      },
     },
     container: {
       padding: {

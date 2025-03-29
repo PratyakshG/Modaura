@@ -28,10 +28,9 @@ export default function StandardComingSoon() {
             }}
           />
         </div>
-        <div className="w-full h-2/3 md:h-screen flex flex-col items-center justify-center">
+        <div className="bg-ivory w-full h-2/3 md:h-screen flex flex-col items-center justify-center">
           <Header />
           <ComingSoonContent />
-          <SubscribeForm />
           <Footer />
         </div>
       </div>
